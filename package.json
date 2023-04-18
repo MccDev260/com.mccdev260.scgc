@@ -1,0 +1,17 @@
+{
+  "name": "com.mccdev260.scgc",
+  "version": "1.0.0",
+  "displayName": "Scene Camera Gamepad Control",
+  "description": "Control the scene view camera, select and focus on objects using a gamepad. See docs for controls and how to customize settings",
+  "author": {
+    "name": "Mccdev260",
+    "email": "mccducky23@gmail.com"
+  },
+  "keywords": [
+    "gamepad",
+    "scene camera"
+  ],
+  "dependencies": {
+    "com.unity.inputsystem": "1.5.1"
+  }
+}
