@@ -67,8 +67,8 @@ public class SceneCamGamepadControl : Editor
 
             camTarget.transform.position += camTarget.transform.forward * inputMove.y * settings.lateralSpeed * Time.deltaTime;
             camTarget.transform.position += camTarget.transform.right * inputMove.x * settings.lateralSpeed * Time.deltaTime;
-            camTarget.transform.position += inputUp ? camTarget.transform.up * settings.upSpeed : camTarget.transform.up * 0f;
-            camTarget.transform.position -= inputDown ? camTarget.transform.up * settings.downSpeed : camTarget.transform.up * 0f;
+            camTarget.transform.position += inputUp ? camTarget.transform.up * settings.upSpeed * Time.deltaTime : camTarget.transform.up * 0f;
+            camTarget.transform.position -= inputDown ? camTarget.transform.up * settings.downSpeed * Time.deltaTime : camTarget.transform.up * 0f;
 
             camTarget.transform.Rotate(Vector3.up, inputRotate.x * settings.rotationSpeed * Time.deltaTime);
             camTarget.transform.Rotate(Vector3.right, -inputRotate.y * settings.rotationSpeed * Time.deltaTime);
