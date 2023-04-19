@@ -2,6 +2,14 @@
 ## Dependencies:
 - Input System 1.5.1+
 
+## Setup:
+For this package to work, a scriptable object containing the settings values needs to be created in the assets folder.
+
+- Open project window context menu (right-click).
+- Create > MccDev260 > EditorTools > SCGC_Settings
+
+Once the asset is created, customize settings to your liking, and test with the controls below.
+
 ## Controls:
 |    **Action**    | **Binding** |
 |:----------------:|:-----------:|
@@ -12,8 +20,9 @@
 |    Select Obj    |      A      |
 | Snap to Selected |      B      |
 
-## Settings:
-In the project window, Navigate to the folder for this package under packages; Within the Editor folder is a Scriptable Object where you can edit the speed and raycast distance values.
-
 ## Notes:
 Object selection uses raycasting so it only works with objects with a collider.
+
+## Known Issues:
+- *Package installed and setup correctly but there's no response to input.*
+  - As the settings asset is assigned when the scriptable object is validated, selecting the asset so it shows in the inspector should fix the problem. This is hopefully a temporary work around while other solutions are investigated.
