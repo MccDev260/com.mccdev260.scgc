@@ -24,8 +24,8 @@ Once the asset is created, customize settings to your liking, and test with the 
 Object selection uses raycasting so it only works with objects with a collider.
 
 ## Known Issues:
-- *Vanilla mouse controls are overridden*
-  - The only work arounds right now are; Just use the controller, remove package until its resolved, or submit a pull request.
+- *Some view tool controls are unresponsive.*
+  - As of *v1.0.1*, Both *move*, and *zoom* are unresponsive. *Orbit* and *flythrough mode* still work.
 
 - *Package installed and setup correctly but there's no response to input.*
-  - As the settings asset is assigned when the scriptable object is validated, selecting the asset so it shows in the inspector should fix the problem. This is hopefully a temporary work around while other solutions are investigated.
+  - As the settings asset is assigned when the scriptable object is validated, selecting the asset so it shows in the inspector or changing a value should fix the problem. This is hopefully a temporary work around while other solutions are investigated.
